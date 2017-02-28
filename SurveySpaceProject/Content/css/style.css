@@ -1,0 +1,92 @@
+﻿body {
+    font-family:'Century Gothic',Verdana,Arial;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    border:0px;
+}
+
+#wrapper {
+    width:100%;
+    height:100%;
+    background-color:#2c3e50;
+}
+
+    #wrapper nav {
+        margin:0px auto;
+        width:1400px;
+        height:50px;
+        background-color:#808080;
+    }
+
+        #wrapper nav .logo {
+            float:left;
+            width:99px;
+            height:50px;
+            line-height:50px;
+            color:black;
+            font-weight:bold;
+            text-align:center;
+            border-right:1px solid #ffffff;
+        }
+
+        #wrapper nav .menu {
+            float:left;
+            width:799px;
+            height:50px;
+            border-right:1px solid #ffffff;
+        }
+
+        #wrapper nav .login-wrapper {
+            float:left;
+            width:400px;
+            height:35px;
+            padding-left:100px;
+            padding-top:15px;
+        }
+
+            #wrapper nav .login-wrapper a {
+                margin-right:10px;
+                display:block;
+                width:150px;
+                text-decoration:none;
+                float:left;
+                text-align:center;
+                background-color:#27ae60; 
+                color:#ffffff;
+            }
+
+    #wrapper .banner {
+        width:100%;
+        height:500px;
+        background-color:#f39c12;
+        float:left;
+    }
+
+    #wrapper .developer {
+        float:left;
+        width:100%;
+        height:300px;
+        background-color:#27ae60;
+    }
+
+        #wrapper .developer .developer-wrapper {
+            margin:0 auto;
+            width:1400px;
+            height:300px;
+            background-color:#ffffff;
+        }
+
+    #wrapper footer {
+        float:left;
+        width:100%;
+        height:250px;
+        background-color:#c0392b;
+    }
+
+        #wrapper footer .footer-wrapper {
+            margin: 0 auto;
+            width:1400px;
+            height:250px;
+            background-color:#e74c3c;
+        }
