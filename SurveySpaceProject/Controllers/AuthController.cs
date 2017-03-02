@@ -30,8 +30,7 @@ namespace SurveySpaceProject.Controllers
                     new Claim(ClaimTypes.Name, model.Email)
                     }, "ApplicationCookie");
                 Request.GetOwinContext().Authentication.SignIn(identity);
-                //return RedirectToAction("Index", "");
-                return View(model);
+                return RedirectToAction("Index", "Home");
             }
 
             ModelState.AddModelError("", "Invalid user name!");
@@ -44,6 +43,15 @@ namespace SurveySpaceProject.Controllers
                 return View(model);
 
             return RedirectToAction("Login");
+        }
+
+        [HttpPost]
+        public ActionResult Register(LoginModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+            
+                
         }
 
         public ActionResult Logout()
